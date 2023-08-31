@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+body {
+  background-image: url(https://wallpaperaccess.com/full/3825629.jpg);
+  background-size: cover;
+}
+
+.clock {
+  width: 500px;
+  height: 500px;
+  border: 10px solid #0be0e7;
+  border-radius: 50%;
+  margin: 50px auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clock__block-number {
+  position: absolute;
+}
+.clock__block-number:nth-child(1) {
+  top: 20px;
+  left: 47%;
+  color: white;
+  font-size: 30px;
+}
+.clock__block-number:nth-child(2) {
+  top: 48%;
+  right: 20px;
+  color: aqua;
+  font-size: 30px;
+}
+.clock__block-number:nth-child(3) {
+  left: 49%;
+  bottom: 20px;
+  color: greenyellow;
+  font-size: 30px;
+}
+.clock__block-number:nth-child(4) {
+  top: 48%;
+  left: 20px;
+  color: lime;
+  font-size: 30px;
+}
+.clock__Arrow-3 {
+  position: absolute;
+  width: 5px;
+  height: 195px;
+  background-color: black;
+  bottom: 50%;
+  animation: step 60s linear infinite;
+  transform-origin: bottom;
+}
+.clock__Arrow-1 {
+  position: absolute;
+  width: 7px;
+  height: 185px;
+  background-color: rgb(9, 205, 231);
+  bottom: 50%;
+  animation: step 3600s linear infinite;
+  transform-origin: bottom;
+}
+.clock__Arrow-2 {
+  position: absolute;
+  width: 8px;
+  height: 170px;
+  background-color: rgb(186, 224, 13);
+  bottom: 50%;
+  animation: step 7200s linear infinite;
+  transform-origin: bottom;
+}
+
+.UFC__DustinPoirier {
+  position: absolute;
+  max-width: 400px;
+  left: 0;
+  bottom: 0;
+  animation: pshh 1.5s linear infinite alternate;
+}
+
+.UFC__FrancisNgannou {
+  max-width: 400px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  animation: Francis 1.5s linear infinite alternate;
+}
+
+@keyframes pshh {
+  0% {
+    transform: scale(0.99);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes Francis {
+  0% {
+    transform: scale(0.99);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes step {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}/*# sourceMappingURL=style.css.map */
